@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_root"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#FFF"
+              android:padding="10dp"
+              >
+    <ImageView android:id="@+id/android_image"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="10dp"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:src="@drawable/android_sm_trans"
+               />
+    
+    
+    <TextView android:id="@+id/textTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#000"
+              android:padding="10dp"
+              android:textSize="18dp"
+              android:layout_alignParentTop="true"
+              android:layout_toRightOf="@id/android_image"
+              android:text="Market Billing Unavailable or Simulator Enabled" />
+    
+    <TextView android:id="@+id/text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#000"
+              android:padding="10dp"
+              android:layout_marginTop="10dp"
+              android:textSize="16dp"
+              android:layout_below="@id/android_image"
+               android:layout_alignParentLeft="true"
+              android:text="This Debug simulator allows you to test behavior of your purchase solution from inside a Virtual Device. \nMake sure you disable Debug code prior to final shipment of this product."
+              />
+    
+    <TextView android:id="@+id/textItemId"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#000"
+              android:padding="10dp"
+              android:layout_marginTop="10dp"
+              android:textSize="16dp"
+              android:layout_below="@id/text"
+              android:layout_alignParentLeft="true"
+              android:text="Product ID: "
+              />
+    <Button android:id="@+id/BtnBuy"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_alignParentLeft="true"
+               android:layout_margin="15dp"
+               android:textSize="16dp"
+               android:padding="10dp"
+               android:paddingLeft="25dp"
+               android:paddingRight="25dp"
+              android:text="  Buy  "
+              />
+    <Button android:id="@+id/BtnFail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               android:layout_toRightOf="@id/BtnBuy"
+              android:text="  Fail  "
+               android:textSize="16dp"
+               android:layout_margin="15dp"
+               android:paddingLeft="25dp"
+               android:paddingRight="25dp"
+               android:padding="10dp"
+              />
+    
+</RelativeLayout>
